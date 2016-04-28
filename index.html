@@ -22,15 +22,21 @@
   				<div class="col-md-5">Description</div>
   				<div class="col-md-2">Location</div>
   		</div>
-			
 		<div class="row" ng-repeat="spots in topspots">
 				<div class="col-md-5">{{spots.name}}</div>
 				<div class="col-md-5">{{spots.description}}</div>
 				<div  id="button" class="col-md-2"><a class='btn btn-default' href='https://www.google.com/maps?q={{spots.location[0]}},{{spots.location[1]}}' target='_blank'>Go!</a></div>
 		</div>
+		<div id="newName" class="row" ng-show="click">{{newName}}</div>
+		<div class="col-lg-6">
+    		<div class="input-group">
+      		<input type="text" class="form-control" placeholder="What's your favorite place in San Diego?" ng-model="newName">
+      		<span class="input-group-btn">
+        	<button class="btn btn-default" type="button" ng-click="click=true">Add</button>
+      		</span>
+    	</div>
+  </div>
 	</div>
-
-	<footer>Top of Page</footer>
 
 </body>
 <script src="index.js"></script>

@@ -17,6 +17,8 @@ $scope.topspots= topspots.data;
 		
 		})
 	}
+	$scope.newName="";
+	$scope.click = false;
 
 }]);
 

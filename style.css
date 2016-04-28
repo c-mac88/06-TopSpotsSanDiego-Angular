@@ -24,3 +24,7 @@ body {
 #button {
 	text-align: center;
 }
+
+#newName {
+	padding:10px;
+}
