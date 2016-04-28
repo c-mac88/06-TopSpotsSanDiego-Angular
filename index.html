@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<meta charset="utf-8">
+	<title>San Diego Top Spots</title>
+   
+</head>
+
+<body>
+	<div id ="header" class="page-header">
+  				<h1>Top Spots<small> San Diego</small></h1>
+	</div>
+
+	<div class="container-fluid" ng-controller="MyCtrl">
+		<div id="columnNames" class="row">
+			  	<div class="col-md-5">Name</div>
+  				<div class="col-md-5">Description</div>
+  				<div class="col-md-2">Location</div>
+  		</div>
+			
+		<div class="row" ng-repeat="spots in topspots">
+				<div class="col-md-5">{{spots.name}}</div>
+				<div class="col-md-5">{{spots.description}}</div>
+				<div  id="button" class="col-md-2"><a class='btn btn-default' href='https://www.google.com/maps?q={{spots.location[0]}},{{spots.location[1]}}' target='_blank'>Go!</a></div>
+		</div>
+	</div>
+
+	<footer>Top of Page</footer>
+
+</body>
+<script src="index.js"></script>
+</html>

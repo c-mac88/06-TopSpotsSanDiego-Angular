@@ -1,0 +1,23 @@
+{
+  "name": "TopSpotsWithAngular",
+  "main": "index.html",
+  "description": "San Diego Top Spots",
+  "keywords": [
+    "Top",
+    "Spot",
+    "Angular"
+  ],
+  "authors": [
+    "C-Mac"
+  ],
+  "license": "none",
+  "homepage": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
